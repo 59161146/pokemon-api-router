@@ -4,19 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "nodemon server.js"
+    "test": "ava ",
+    "start": "nodemon server.js",
+    "dev": "./node_modules/.bin/nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "mongodb": "^3.3.2",
     "request": "^2.88.0"
   },
   "devDependencies": {
+    "ava": "^2.4.0",
+    "babel-runtime": "^6.26.0",
     "chai": "^4.2.0",
     "jest": "^24.9.0",
+    "mongomem": "^0.1.9",
     "nock": "^10.0.6",
     "nodemon": "^1.19.1",
     "supertest": "^4.0.2"
